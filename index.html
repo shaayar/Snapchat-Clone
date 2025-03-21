@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form action="submit()" method="post">
+            <div class="head">
+                <img src="./public/logo.svg" alt="" srcset="">
+                <h2>Sign Up</h2>
+            </div>
+            <div class="part">
+                <label for="name">Name</label>
+                <input type="text" name="First name" required placeholder="First Name">
+                <input type="text" name="Last name" placeholder="Last Name [optional]">
+            </div>
+            <div class="part">
+                <label for="month">Birthday</label>
+                <div class="bday">
+                    <input type="text" name="month" placeholder="Month" required>
+                    <input type="text" name="day" placeholder="Day" required>
+                    <input type="text" name="year" placeholder="Year" required>
+                </div>
+            </div>
+            <div class="part">
+                <label for="name">User Name</label>
+                <input type="text" name="username" required placeholder="Enter your Username">
+            </div>
+            <div class="part">
+                <label for="name">Password</label>
+                <input type="password" name="First name" required placeholder="Enter a secure password">
+                <p>The password must be at least 8 characters.</p>
+            </div>
+            <p>
+                By tapping "Agree and Continue" below, you agree to the <a href="https://www.snap.com/terms">Terms of Service</a> and acknowledge that you have read the <a href="https://www.snap.com/privacy/privacy-policy">Privacy Policy</a>.
+            </p>
+        </form>
+    </main>
+</body>
+</html>
