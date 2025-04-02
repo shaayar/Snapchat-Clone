@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snap Clone</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <main>
-        <form action="submit()" method="post">
-            <div class="head">
-                <img src="./public/logo.svg" alt="" srcset="">
-                <h2>Sign Up</h2>
-            </div>
-            <div class="part">
-                <label for="name">Name</label>
-                <input type="text" name="First name" required placeholder="First Name">
-                <input type="text" name="Last name" placeholder="Last Name [optional]">
-            </div>
-            <div class="part">
-                <label for="month">Birthday</label>
-                <div class="bday">
-                    <input type="text" name="month" placeholder="Month" required>
-                    <input type="text" name="day" placeholder="Day" required>
-                    <input type="text" name="year" placeholder="Year" required>
-                </div>
-            </div>
-            <div class="part">
-                <label for="name">User Name</label>
-                <input type="text" name="username" required placeholder="Enter your Username">
-            </div>
-            <div class="part">
-                <label for="name">Password</label>
-                <input type="password" name="First name" required placeholder="Enter a secure password">
-                <p>The password must be at least 8 characters.</p>
-            </div>
-            <p>
-                By tapping "Agree and Continue" below, you agree to the <a href="https://www.snap.com/terms">Terms of Service</a> and acknowledge that you have read the <a href="https://www.snap.com/privacy/privacy-policy">Privacy Policy</a>.
-            </p>
-        </form>
-    </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snapchat Sign Up</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="./logo.svg" alt="logo" srcset="">
+        <h2>Sign Up</h2>
+      </div>
+
+      <label for="first-name">Name</label>
+      <div class="name-container">
+        <input type="text" id="first-name" placeholder="First Name" />
+        <input type="text" id="last-name" placeholder="Last Name (optional)" />
+      </div>
+
+      <label for="birthday">Birthday</label>
+      <div class="birthday-container">
+        <input type="text" id="month" placeholder="Month" />
+        <input type="text" id="day" placeholder="Day" />
+        <input type="text" id="year" placeholder="Year" />
+      </div>
+
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter your username" />
+      <p class="small-text">You can change this later</p>
+
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter a secure password"
+      />
+      <p class="small-text">Password must be at least 8 characters</p>
+
+      <button>Agree and Continue</button>
+
+      <p class="terms">
+        By tapping "Agree and Continue," you agree to the
+        <a href="#">Terms of Service</a> and acknowledge that you have read the
+        <a href="#">Privacy Policy</a>.
+      </p>
+
+      <div class="footer">
+        <p>Already have an account? <a href="#">Log In</a></p>
+        <p>Advertising on Snapchat? <a href="#">Sign Up for Ads Manager</a></p>
+      </div>
+    </div>
+  </body>
 </html>
